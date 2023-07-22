@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: monthly_orders
+    columns:
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('customers')
+              field: id
