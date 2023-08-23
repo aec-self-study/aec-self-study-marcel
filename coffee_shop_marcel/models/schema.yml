@@ -1,10 +1,10 @@
 version: 2
 
 models:
-  - name: monthly_orders
+  - name: stg_coffee_shop_monthly_orders
     columns:
       - name: customer_id
         tests:
           - relationships:
-              to: ref('customers')
+              to: ref('stg_coffee_shop_customers')
               field: id
