@@ -1,8 +1,14 @@
-{{  config(
-    materialized='table'
-)
 
-}}
+  
+    
+
+    create or replace table `aec-students`.`dbt_marcel`.`customers`
+    
+    
+
+    OPTIONS()
+    as (
+      
 
 
 select
@@ -18,3 +24,5 @@ Group by
   customers.name,
   customers.email
 order by first_order_at
+    );
+  
