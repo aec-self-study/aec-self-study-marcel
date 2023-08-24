@@ -3,7 +3,11 @@ with source as (
 ),
 
 renamed as (
-  select *
+  select
+    
+    id,
+    name,
+    email
   from source
 )
 
