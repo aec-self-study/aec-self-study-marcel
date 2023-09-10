@@ -4,7 +4,7 @@ models:
   - name: stg_coffee_shop__customers
     description: Cleaned up data for our customers
     columns:
-      - name: id
+      - name: customer_id
         description: Primary key of the model
         tests:
           - unique
