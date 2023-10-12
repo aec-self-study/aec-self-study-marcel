@@ -27370,3 +27370,407 @@ KeyboardInterrupt
 [0m02:40:43.361821 [debug] [MainThread]: Command `dbt docs serve` failed at 02:40:43.361702 after 80.65 seconds
 [0m02:40:43.362210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf702b6bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf6d4cebf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf6d4ce230>]}
 [0m02:40:43.362639 [debug] [MainThread]: Flushing usage events
+[0m14:23:37.490345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa38c452bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa38b0d3d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa38b0d3c70>]}
+
+
+============================== 14:23:37.502897 | 512b538a-50fd-4939-809d-0b9426b83948 ==============================
+[0m14:23:37.502897 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:23:37.503707 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/workspaces/aec-self-study-marcel/coffee_shop_marcel/logs', 'debug': 'False', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:23:38.579954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '512b538a-50fd-4939-809d-0b9426b83948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3895e79d0>]}
+[0m14:23:38.595966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '512b538a-50fd-4939-809d-0b9426b83948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3895bb820>]}
+[0m14:23:38.596631 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m14:23:38.606273 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m14:23:38.677215 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 4 files added, 0 files changed.
+[0m14:23:38.678175 [debug] [MainThread]: Partial parsing: added file: coffee_shop://models/staging/web_tracking/pageviews_cleaned.sql
+[0m14:23:38.678799 [debug] [MainThread]: Partial parsing: added file: coffee_shop://models/staging/web_tracking/visitors.sql
+[0m14:23:38.679475 [debug] [MainThread]: Partial parsing: added file: coffee_shop://models/staging/web_tracking/schema.yml
+[0m14:23:38.680105 [debug] [MainThread]: Partial parsing: added file: coffee_shop://models/staging/web_tracking/src_webtracking.yml
+[0m14:23:38.712916 [debug] [MainThread]: 1699: static parser successfully parsed staging/web_tracking/pageviews_cleaned.sql
+[0m14:23:38.731289 [debug] [MainThread]: 1699: static parser successfully parsed staging/web_tracking/visitors.sql
+[0m14:23:38.844069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '512b538a-50fd-4939-809d-0b9426b83948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa388e900d0>]}
+[0m14:23:38.850438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '512b538a-50fd-4939-809d-0b9426b83948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa38937bfd0>]}
+[0m14:23:38.850870 [info ] [MainThread]: Found 8 models, 5 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 6 sources, 0 exposures, 0 metrics, 0 groups
+[0m14:23:38.851338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '512b538a-50fd-4939-809d-0b9426b83948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa38937bfa0>]}
+[0m14:23:38.852983 [info ] [MainThread]: 
+[0m14:23:38.853742 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:23:38.854915 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m14:23:38.855424 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:23:42.255503 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students_dbt_marcel'
+[0m14:23:42.256133 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:23:42.518642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '512b538a-50fd-4939-809d-0b9426b83948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3895d19c0>]}
+[0m14:23:42.519426 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m14:23:42.519903 [info ] [MainThread]: 
+[0m14:23:42.530536 [debug] [Thread-1 (]: Began running node model.coffee_shop.stg_coffee_shop__customers
+[0m14:23:42.530992 [debug] [Thread-2 (]: Began running node model.coffee_shop.stg_coffee_shop__order_items
+[0m14:23:42.531370 [debug] [Thread-3 (]: Began running node model.coffee_shop.stg_coffee_shop__orders
+[0m14:23:42.532276 [debug] [Thread-4 (]: Began running node model.coffee_shop.stg_coffee_shop__product_prices
+[0m14:23:42.532748 [debug] [Thread-5 (]: Began running node model.coffee_shop.stg_coffee_shop__products
+[0m14:23:42.531855 [info ] [Thread-1 (]: 1 of 8 START sql view model dbt_marcel.stg_coffee_shop__customers .............. [RUN]
+[0m14:23:42.533291 [info ] [Thread-2 (]: 2 of 8 START sql view model dbt_marcel.stg_coffee_shop__order_items ............ [RUN]
+[0m14:23:42.533840 [debug] [Thread-6 (]: Began running node model.coffee_shop.visitors
+[0m14:23:42.538027 [info ] [Thread-6 (]: 6 of 8 START sql view model dbt_marcel.visitors ................................ [RUN]
+[0m14:23:42.535043 [info ] [Thread-4 (]: 4 of 8 START sql view model dbt_marcel.stg_coffee_shop__product_prices ......... [RUN]
+[0m14:23:42.539910 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.coffee_shop.stg_coffee_shop__product_prices'
+[0m14:23:42.535598 [info ] [Thread-5 (]: 5 of 8 START sql view model dbt_marcel.stg_coffee_shop__products ............... [RUN]
+[0m14:23:42.537372 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_aec-students, now model.coffee_shop.stg_coffee_shop__order_items)
+[0m14:23:42.538918 [debug] [Thread-6 (]: Acquiring new bigquery connection 'model.coffee_shop.visitors'
+[0m14:23:42.542100 [debug] [Thread-6 (]: Began compiling node model.coffee_shop.visitors
+[0m14:23:42.536824 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_marcel, now model.coffee_shop.stg_coffee_shop__customers)
+[0m14:23:42.540570 [debug] [Thread-4 (]: Began compiling node model.coffee_shop.stg_coffee_shop__product_prices
+[0m14:23:42.541303 [debug] [Thread-5 (]: Acquiring new bigquery connection 'model.coffee_shop.stg_coffee_shop__products'
+[0m14:23:42.541699 [debug] [Thread-2 (]: Began compiling node model.coffee_shop.stg_coffee_shop__order_items
+[0m14:23:42.534463 [info ] [Thread-3 (]: 3 of 8 START sql view model dbt_marcel.stg_coffee_shop__orders ................. [RUN]
+[0m14:23:42.553208 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.coffee_shop.stg_coffee_shop__orders'
+[0m14:23:42.553614 [debug] [Thread-3 (]: Began compiling node model.coffee_shop.stg_coffee_shop__orders
+[0m14:23:42.546052 [debug] [Thread-1 (]: Began compiling node model.coffee_shop.stg_coffee_shop__customers
+[0m14:23:42.548373 [debug] [Thread-4 (]: Writing injected SQL for node "model.coffee_shop.stg_coffee_shop__product_prices"
+[0m14:23:42.552486 [debug] [Thread-2 (]: Writing injected SQL for node "model.coffee_shop.stg_coffee_shop__order_items"
+[0m14:23:42.555947 [debug] [Thread-3 (]: Writing injected SQL for node "model.coffee_shop.stg_coffee_shop__orders"
+[0m14:23:42.549725 [debug] [Thread-5 (]: Began compiling node model.coffee_shop.stg_coffee_shop__products
+[0m14:23:42.561372 [debug] [Thread-5 (]: Writing injected SQL for node "model.coffee_shop.stg_coffee_shop__products"
+[0m14:23:42.558484 [debug] [Thread-1 (]: Writing injected SQL for node "model.coffee_shop.stg_coffee_shop__customers"
+[0m14:23:42.564454 [debug] [Thread-1 (]: Timing info for model.coffee_shop.stg_coffee_shop__customers (compile): 14:23:42.556231 => 14:23:42.564189
+[0m14:23:42.545616 [debug] [Thread-6 (]: Writing injected SQL for node "model.coffee_shop.visitors"
+[0m14:23:42.562943 [debug] [Thread-2 (]: Timing info for model.coffee_shop.stg_coffee_shop__order_items (compile): 14:23:42.550116 => 14:23:42.562623
+[0m14:23:42.568286 [debug] [Thread-2 (]: Began executing node model.coffee_shop.stg_coffee_shop__order_items
+[0m14:23:42.562139 [debug] [Thread-3 (]: Timing info for model.coffee_shop.stg_coffee_shop__orders (compile): 14:23:42.553896 => 14:23:42.561848
+[0m14:23:42.565026 [debug] [Thread-1 (]: Began executing node model.coffee_shop.stg_coffee_shop__customers
+[0m14:23:42.565646 [debug] [Thread-5 (]: Timing info for model.coffee_shop.stg_coffee_shop__products (compile): 14:23:42.559181 => 14:23:42.565390
+[0m14:23:42.614373 [debug] [Thread-5 (]: Began executing node model.coffee_shop.stg_coffee_shop__products
+[0m14:23:42.563619 [debug] [Thread-4 (]: Timing info for model.coffee_shop.stg_coffee_shop__product_prices (compile): 14:23:42.546327 => 14:23:42.563334
+[0m14:23:42.576163 [debug] [Thread-3 (]: Began executing node model.coffee_shop.stg_coffee_shop__orders
+[0m14:23:42.567757 [debug] [Thread-6 (]: Timing info for model.coffee_shop.visitors (compile): 14:23:42.542359 => 14:23:42.566314
+[0m14:23:42.659493 [debug] [Thread-1 (]: Writing runtime sql for node "model.coffee_shop.stg_coffee_shop__customers"
+[0m14:23:42.661852 [debug] [Thread-5 (]: Writing runtime sql for node "model.coffee_shop.stg_coffee_shop__products"
+[0m14:23:42.669028 [debug] [Thread-2 (]: Writing runtime sql for node "model.coffee_shop.stg_coffee_shop__order_items"
+[0m14:23:42.669571 [debug] [Thread-4 (]: Began executing node model.coffee_shop.stg_coffee_shop__product_prices
+[0m14:23:42.672536 [debug] [Thread-3 (]: Writing runtime sql for node "model.coffee_shop.stg_coffee_shop__orders"
+[0m14:23:42.672983 [debug] [Thread-6 (]: Began executing node model.coffee_shop.visitors
+[0m14:23:42.679632 [debug] [Thread-6 (]: Writing runtime sql for node "model.coffee_shop.visitors"
+[0m14:23:42.676645 [debug] [Thread-4 (]: Writing runtime sql for node "model.coffee_shop.stg_coffee_shop__product_prices"
+[0m14:23:42.681812 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m14:23:42.680618 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m14:23:42.683496 [debug] [Thread-3 (]: On model.coffee_shop.stg_coffee_shop__orders: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "coffee_shop_marcel", "target_name": "dev", "node_id": "model.coffee_shop.stg_coffee_shop__orders"} */
+
+
+  create or replace view `aec-students`.`dbt_marcel`.`stg_coffee_shop__orders`
+  OPTIONS()
+  as with source as (
+  select * from `analytics-engineers-club`.`coffee_shop`.`orders`
+),
+
+renamed as (
+  select
+    id as order_id,
+    created_at,
+    customer_id,
+    total,
+    address,
+    state,
+    zip
+  from source
+)
+
+select *
+from renamed;
+
+
+[0m14:23:42.673743 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:23:42.681129 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m14:23:42.686005 [debug] [Thread-6 (]: On model.coffee_shop.visitors: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "coffee_shop_marcel", "target_name": "dev", "node_id": "model.coffee_shop.visitors"} */
+
+
+  create or replace view `aec-students`.`dbt_marcel`.`visitors`
+  OPTIONS()
+  as -- one record per visitor id
+with visitors as (
+    select distinct
+        visitor_id,
+
+        first_value(customer_id ignore nulls) over (
+            partition by visitor_id
+            order by timestamp
+            range between unbounded preceding and unbounded following
+        ) as first_customer_id,
+
+        min(timestamp) over (
+            partition by visitor_id
+        ) as first_seen_at,
+
+        max(timestamp) over (
+            partition by visitor_id
+        ) as last_seen_at
+
+
+    from `analytics-engineers-club`.`web_tracking`.`pageviews`
+)
+select
+    *,
+    first_value(visitor_id) over (
+        partition by coalesce(first_customer_id, visitor_id)
+        order by first_seen_at
+    ) as first_visitor_id
+from visitors;
+
+
+[0m14:23:42.683148 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m14:23:42.682647 [debug] [Thread-4 (]: On model.coffee_shop.stg_coffee_shop__product_prices: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "coffee_shop_marcel", "target_name": "dev", "node_id": "model.coffee_shop.stg_coffee_shop__product_prices"} */
+
+
+  create or replace view `aec-students`.`dbt_marcel`.`stg_coffee_shop__product_prices`
+  OPTIONS()
+  as with source as (
+  select * from `analytics-engineers-club`.`coffee_shop`.`product_prices`
+),
+
+renamed as (
+  select
+    id as product_price_id,
+    product_id,
+    price,
+    created_at,
+    ended_at
+  from source
+)
+
+select *
+from renamed;
+
+
+[0m14:23:42.682281 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:23:42.685377 [debug] [Thread-1 (]: On model.coffee_shop.stg_coffee_shop__customers: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "coffee_shop_marcel", "target_name": "dev", "node_id": "model.coffee_shop.stg_coffee_shop__customers"} */
+
+
+  create or replace view `aec-students`.`dbt_marcel`.`stg_coffee_shop__customers`
+  OPTIONS()
+  as with source as (
+  select * from `analytics-engineers-club`.`coffee_shop`.`customers`
+),
+
+renamed as (
+  select
+    
+    id as customer_id,
+    name as customer_name,
+    email as customer_email
+  from source
+)
+
+select *
+from renamed;
+
+
+[0m14:23:42.687555 [debug] [Thread-5 (]: On model.coffee_shop.stg_coffee_shop__products: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "coffee_shop_marcel", "target_name": "dev", "node_id": "model.coffee_shop.stg_coffee_shop__products"} */
+
+
+  create or replace view `aec-students`.`dbt_marcel`.`stg_coffee_shop__products`
+  OPTIONS()
+  as with source as (
+  select * from `analytics-engineers-club`.`coffee_shop`.`products`
+),
+
+renamed as (
+  
+    select
+    id as product_id,
+    name,
+    category,
+    created_at
+  from source
+)
+
+select *
+from renamed;
+
+
+[0m14:23:42.689937 [debug] [Thread-2 (]: On model.coffee_shop.stg_coffee_shop__order_items: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "coffee_shop_marcel", "target_name": "dev", "node_id": "model.coffee_shop.stg_coffee_shop__order_items"} */
+
+
+  create or replace view `aec-students`.`dbt_marcel`.`stg_coffee_shop__order_items`
+  OPTIONS()
+  as with source as (
+  select * from `analytics-engineers-club`.`coffee_shop`.`order_items`
+),
+
+renamed as (
+  
+    select
+    id as order_item_id,
+    order_id,
+    product_id
+  from source
+)
+
+select *
+from renamed;
+
+
+[0m14:23:43.671123 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:d59829c9-b50e-45e1-84de-2ac6df9fedb5&page=queryresults
+[0m14:23:43.685539 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:6752b4f4-cee0-4b22-aad5-b47adc720b79&page=queryresults
+[0m14:23:43.704551 [debug] [Thread-5 (]: Timing info for model.coffee_shop.stg_coffee_shop__products (execute): 14:23:42.619867 => 14:23:43.704336
+[0m14:23:43.705856 [debug] [Thread-2 (]: Timing info for model.coffee_shop.stg_coffee_shop__order_items (execute): 14:23:42.568619 => 14:23:43.705670
+[0m14:23:43.707237 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '512b538a-50fd-4939-809d-0b9426b83948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa388f41840>]}
+[0m14:23:43.706496 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '512b538a-50fd-4939-809d-0b9426b83948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3893ea320>]}
+[0m14:23:43.708327 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:66719029-585e-4c6f-a805-0e7830b944fc&page=queryresults
+[0m14:23:43.710996 [debug] [Thread-3 (]: Timing info for model.coffee_shop.stg_coffee_shop__orders (execute): 14:23:42.669867 => 14:23:43.710814
+[0m14:23:43.711670 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '512b538a-50fd-4939-809d-0b9426b83948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa388f4eaa0>]}
+[0m14:23:43.709060 [info ] [Thread-5 (]: 5 of 8 OK created sql view model dbt_marcel.stg_coffee_shop__products .......... [[32mCREATE VIEW (0 processed)[0m in 1.17s]
+[0m14:23:43.714008 [debug] [Thread-5 (]: Finished running node model.coffee_shop.stg_coffee_shop__products
+[0m14:23:43.712358 [info ] [Thread-2 (]: 2 of 8 OK created sql view model dbt_marcel.stg_coffee_shop__order_items ....... [[32mCREATE VIEW (0 processed)[0m in 1.17s]
+[0m14:23:43.713087 [info ] [Thread-3 (]: 3 of 8 OK created sql view model dbt_marcel.stg_coffee_shop__orders ............ [[32mCREATE VIEW (0 processed)[0m in 1.16s]
+[0m14:23:43.716207 [debug] [Thread-3 (]: Finished running node model.coffee_shop.stg_coffee_shop__orders
+[0m14:23:43.715382 [debug] [Thread-2 (]: Finished running node model.coffee_shop.stg_coffee_shop__order_items
+[0m14:23:43.727933 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:da9ddfd4-d7fd-4b23-888d-feada39736e9&page=queryresults
+[0m14:23:43.729571 [debug] [Thread-6 (]: Timing info for model.coffee_shop.visitors (execute): 14:23:42.677118 => 14:23:43.729391
+[0m14:23:43.730237 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '512b538a-50fd-4939-809d-0b9426b83948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3893f6410>]}
+[0m14:23:43.730763 [info ] [Thread-6 (]: 6 of 8 OK created sql view model dbt_marcel.visitors ........................... [[32mCREATE VIEW (0 processed)[0m in 1.19s]
+[0m14:23:43.731490 [debug] [Thread-6 (]: Finished running node model.coffee_shop.visitors
+[0m14:23:43.732125 [debug] [Thread-8 (]: Began running node model.coffee_shop.pageviews_cleaned
+[0m14:23:43.732626 [info ] [Thread-8 (]: 7 of 8 START sql view model dbt_marcel.pageviews_cleaned ....................... [RUN]
+[0m14:23:43.733424 [debug] [Thread-8 (]: Acquiring new bigquery connection 'model.coffee_shop.pageviews_cleaned'
+[0m14:23:43.733807 [debug] [Thread-8 (]: Began compiling node model.coffee_shop.pageviews_cleaned
+[0m14:23:43.736995 [debug] [Thread-8 (]: Writing injected SQL for node "model.coffee_shop.pageviews_cleaned"
+[0m14:23:43.740694 [debug] [Thread-8 (]: Timing info for model.coffee_shop.pageviews_cleaned (compile): 14:23:43.734045 => 14:23:43.740407
+[0m14:23:43.741280 [debug] [Thread-8 (]: Began executing node model.coffee_shop.pageviews_cleaned
+[0m14:23:43.747458 [debug] [Thread-8 (]: Writing runtime sql for node "model.coffee_shop.pageviews_cleaned"
+[0m14:23:43.748688 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m14:23:43.749335 [debug] [Thread-8 (]: On model.coffee_shop.pageviews_cleaned: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "coffee_shop_marcel", "target_name": "dev", "node_id": "model.coffee_shop.pageviews_cleaned"} */
+
+
+  create or replace view `aec-students`.`dbt_marcel`.`pageviews_cleaned`
+  OPTIONS()
+  as with pageviews as (
+    select * from `analytics-engineers-club`.`web_tracking`.`pageviews`
+),
+
+visitors as (
+    select * from `aec-students`.`dbt_marcel`.`visitors`
+),
+
+joined as (
+    select
+        pageviews.*,
+        -- customer id if we have it, else visitor id
+        coalesce(
+            visitors.first_customer_id,
+            pageviews.visitor_id
+        ) as blended_user_id,
+
+        visitors.first_visitor_id
+
+    from pageviews
+    left join visitors
+        on pageviews.visitor_id = visitors.visitor_id
+)
+
+select * from joined;
+
+
+[0m14:23:43.758764 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:cc45bfb1-3dc6-4f5f-a14c-1c15090df4e4&page=queryresults
+[0m14:23:43.767094 [debug] [Thread-4 (]: Timing info for model.coffee_shop.stg_coffee_shop__product_prices (execute): 14:23:42.674236 => 14:23:43.766705
+[0m14:23:43.770938 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '512b538a-50fd-4939-809d-0b9426b83948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3893d26e0>]}
+[0m14:23:43.773022 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:c2585d68-8f32-4f81-83d7-cf4a49761810&page=queryresults
+[0m14:23:43.775967 [debug] [Thread-1 (]: Timing info for model.coffee_shop.stg_coffee_shop__customers (execute): 14:23:42.576446 => 14:23:43.775666
+[0m14:23:43.776961 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '512b538a-50fd-4939-809d-0b9426b83948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3899743a0>]}
+[0m14:23:43.781123 [info ] [Thread-1 (]: 1 of 8 OK created sql view model dbt_marcel.stg_coffee_shop__customers ......... [[32mCREATE VIEW (0 processed)[0m in 1.24s]
+[0m14:23:43.782149 [debug] [Thread-1 (]: Finished running node model.coffee_shop.stg_coffee_shop__customers
+[0m14:23:43.783324 [info ] [Thread-4 (]: 4 of 8 OK created sql view model dbt_marcel.stg_coffee_shop__product_prices .... [[32mCREATE VIEW (0 processed)[0m in 1.23s]
+[0m14:23:43.784292 [debug] [Thread-4 (]: Finished running node model.coffee_shop.stg_coffee_shop__product_prices
+[0m14:23:43.785067 [debug] [Thread-5 (]: Began running node model.coffee_shop.int_weekly_revenue_aggregrate_to_product
+[0m14:23:43.785687 [info ] [Thread-5 (]: 8 of 8 START sql view model dbt_marcel.int_weekly_revenue_aggregrate_to_product  [RUN]
+[0m14:23:43.786823 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.coffee_shop.stg_coffee_shop__products, now model.coffee_shop.int_weekly_revenue_aggregrate_to_product)
+[0m14:23:43.787425 [debug] [Thread-5 (]: Began compiling node model.coffee_shop.int_weekly_revenue_aggregrate_to_product
+[0m14:23:43.793643 [debug] [Thread-5 (]: Writing injected SQL for node "model.coffee_shop.int_weekly_revenue_aggregrate_to_product"
+[0m14:23:43.799227 [debug] [Thread-5 (]: Timing info for model.coffee_shop.int_weekly_revenue_aggregrate_to_product (compile): 14:23:43.788011 => 14:23:43.798928
+[0m14:23:43.800195 [debug] [Thread-5 (]: Began executing node model.coffee_shop.int_weekly_revenue_aggregrate_to_product
+[0m14:23:43.806769 [debug] [Thread-5 (]: Writing runtime sql for node "model.coffee_shop.int_weekly_revenue_aggregrate_to_product"
+[0m14:23:43.813760 [debug] [Thread-5 (]: Opening a new connection, currently in state closed
+[0m14:23:43.814473 [debug] [Thread-5 (]: On model.coffee_shop.int_weekly_revenue_aggregrate_to_product: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "coffee_shop_marcel", "target_name": "dev", "node_id": "model.coffee_shop.int_weekly_revenue_aggregrate_to_product"} */
+
+
+  create or replace view `aec-students`.`dbt_marcel`.`int_weekly_revenue_aggregrate_to_product`
+  OPTIONS()
+  as with
+
+order_items as (
+
+   select * from `aec-students`.`dbt_marcel`.`stg_coffee_shop__order_items`
+
+), 
+
+orders as (
+
+   select * from `aec-students`.`dbt_marcel`.`stg_coffee_shop__orders`
+
+), 
+
+products as (
+
+   select * from `aec-students`.`dbt_marcel`.`stg_coffee_shop__products`
+
+),
+
+
+product_prices as (
+
+   select * from `aec-students`.`dbt_marcel`.`stg_coffee_shop__product_prices`
+
+),
+
+
+order_items_and_orders_and_products_and_product_prices as (
+   select   orders.created_at,
+            orders.order_id,
+            products.name,
+            product_price_id,
+            product_prices.price
+                   
+   from order_items left join orders
+         on order_items.order_id = orders.order_id
+      left join products 
+         on order_items.product_id = products.product_id
+      left join product_prices 
+         on order_items.product_id = product_prices.product_id 
+            and orders.created_at between product_prices.created_at and product_prices.ended_at
+),
+
+order_items_and_orders_and_products_and_product_prices_at_product_week_grain as(
+Select   DATE_TRUNC(created_at, WEEK) AS weekly_date,
+         name,
+         sum(price) as revenue
+from order_items_and_orders_and_products_and_product_prices
+
+Group by 1,2
+)
+
+select * from order_items_and_orders_and_products_and_product_prices_at_product_week_grain;
+
+
+[0m14:23:44.590918 [debug] [Thread-8 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:563e6d8c-ada4-40f1-a715-0e7272427e97&page=queryresults
+[0m14:23:44.593233 [debug] [Thread-8 (]: Timing info for model.coffee_shop.pageviews_cleaned (execute): 14:23:43.741714 => 14:23:44.593042
+[0m14:23:44.594217 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:72069341-83b2-4bce-b4c7-fc58bc71c862&page=queryresults
+[0m14:23:44.594908 [debug] [Thread-8 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '512b538a-50fd-4939-809d-0b9426b83948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa388eb3850>]}
+[0m14:23:44.596731 [debug] [Thread-5 (]: Timing info for model.coffee_shop.int_weekly_revenue_aggregrate_to_product (execute): 14:23:43.800778 => 14:23:44.596554
+[0m14:23:44.597396 [info ] [Thread-8 (]: 7 of 8 OK created sql view model dbt_marcel.pageviews_cleaned .................. [[32mCREATE VIEW (0 processed)[0m in 0.86s]
+[0m14:23:44.598259 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '512b538a-50fd-4939-809d-0b9426b83948', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa388eb3b20>]}
+[0m14:23:44.598969 [debug] [Thread-8 (]: Finished running node model.coffee_shop.pageviews_cleaned
+[0m14:23:44.599920 [info ] [Thread-5 (]: 8 of 8 OK created sql view model dbt_marcel.int_weekly_revenue_aggregrate_to_product  [[32mCREATE VIEW (0 processed)[0m in 0.81s]
+[0m14:23:44.600882 [debug] [Thread-5 (]: Finished running node model.coffee_shop.int_weekly_revenue_aggregrate_to_product
+[0m14:23:44.602714 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:23:44.603010 [debug] [MainThread]: Connection 'model.coffee_shop.stg_coffee_shop__order_items' was properly closed.
+[0m14:23:44.603286 [debug] [MainThread]: Connection 'model.coffee_shop.stg_coffee_shop__customers' was properly closed.
+[0m14:23:44.603671 [debug] [MainThread]: Connection 'model.coffee_shop.visitors' was properly closed.
+[0m14:23:44.604015 [debug] [MainThread]: Connection 'model.coffee_shop.stg_coffee_shop__product_prices' was properly closed.
+[0m14:23:44.604276 [debug] [MainThread]: Connection 'model.coffee_shop.int_weekly_revenue_aggregrate_to_product' was properly closed.
+[0m14:23:44.604549 [debug] [MainThread]: Connection 'model.coffee_shop.stg_coffee_shop__orders' was properly closed.
+[0m14:23:44.604930 [debug] [MainThread]: Connection 'model.coffee_shop.pageviews_cleaned' was properly closed.
+[0m14:23:44.605670 [info ] [MainThread]: 
+[0m14:23:44.606197 [info ] [MainThread]: Finished running 8 view models in 0 hours 0 minutes and 5.75 seconds (5.75s).
+[0m14:23:44.607953 [debug] [MainThread]: Command end result
+[0m14:23:44.619014 [info ] [MainThread]: 
+[0m14:23:44.619593 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:23:44.620070 [info ] [MainThread]: 
+[0m14:23:44.620542 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+[0m14:23:44.621237 [debug] [MainThread]: Command `dbt run` succeeded at 14:23:44.621132 after 7.15 seconds
+[0m14:23:44.621592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa38c452bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa389979c30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3893c3880>]}
+[0m14:23:44.621964 [debug] [MainThread]: Flushing usage events
