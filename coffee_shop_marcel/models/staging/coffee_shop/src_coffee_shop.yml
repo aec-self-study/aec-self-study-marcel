@@ -8,4 +8,11 @@ sources:
       - name: orders
       - name: order_items
       - name: product_prices
+        tests:
+          - dbt_utils.mutually_exclusive_ranges:
+              lower_bound_column: created_at
+              upper_bound_column: ended_at
+              partition_by: product_id
+              gaps: not_allowed
+
       - name: products
