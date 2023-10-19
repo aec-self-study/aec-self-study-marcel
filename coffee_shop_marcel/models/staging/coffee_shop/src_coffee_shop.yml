@@ -6,6 +6,10 @@ sources:
     tables:
       - name: customers
       - name: orders
+        columns:
+          - name: TOTAL
+            tests:
+              - is_greater_than_zero
       - name: order_items
       - name: product_prices
         tests:
